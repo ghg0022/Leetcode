@@ -1,3 +1,5 @@
+# LeetCode 160
+
 # Definition for singly-linked list.
 # class ListNode:
 #     def __init__(self, x):
@@ -14,7 +16,7 @@ class Solution:
 # 반대의 경우도 마찬가지로 headB의 마지막 노드에 도달 시, headA의 첫번째 노드와 연결
 # headA = headB인 경우가 생긴다면 intersectionNode가 존재함
 # ex) 4 1 8 4 5   5 6 1 8 4 5
-#     5 6 1 8 4 5   4 1 8 4 5   // 1845가 겹침, 1이 intersectionNode
+#     5 6 1 8 4 5   4 1 8 4 5   // 값이 1인 노드의 포인터가 가리키는 노드가 8이므로, 8이 intersectionNode
 
         pa, pb = headA, headB
 
