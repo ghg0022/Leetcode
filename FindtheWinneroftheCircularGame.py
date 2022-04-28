@@ -20,10 +20,10 @@ class Solution:
         for i in range(1, n+1):
             self.queue1.append(i) # deque에 n만큼의 원소를 맨 끝(오른쪽)부터 넣어줌 ex) n=5일때, 1 2 3 4 5
         
-        while self.queue1:
+        while self.queue1: # deque 전체에서 실행
             temp = k - 1 # k번째의 사람이 게임에서 떠나야하므로 k-1번째까지 실행
             while temp > 0:
-                self.queue1.append(self.queue1.popleft())
+                self.queue1.append(self.queue1.popleft()) # k-1번째까지의 원소를 deque 오른쪽에 다시 넣어줌
                 temp -= 1
             result = self.queue1.popleft()
 
